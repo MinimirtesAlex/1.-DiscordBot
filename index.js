@@ -16,7 +16,9 @@ bot.on('message', message =>{
 
     let lowercaseargs = args.map(args => args.toLowerCase());
 
-    if(message.content.startsWith(PREFIX)) return message.channel.send('LOL')
+    if(message.content.startsWith(PREFIX)) {
+        return message.channel.send('LOL')
+    }
 
 
    /* switch (lowercaseargs[0]){
