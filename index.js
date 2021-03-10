@@ -57,16 +57,8 @@ bot.on('message', message =>{
             }
         break;
 
-        case 'owner':
-            if(message.member.client.user.match('MinimirtesAlex')) {
-            
-            message.channel.bulkDelete(1)
-
-            }
-        break;
-
         default:
-
+            message.channel.send('Fehler, dieser Command existiert noch nicht! Bitte Alex ihn hinzuzufügen.')
         break;
 
 
