@@ -34,11 +34,18 @@ bot.on('message', message =>{
                 //if(lowercaseargs[1].includes('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'ä', 'ö', 'ü', 'ß')) return message.channel.send('Fehler, bitte gib nur Zahlen an!')
                 //if(args[1].includes('!', '"', '§', '$', '%', '&', '/', '(', '{', '[', ']', '}', ')', '=', '?', '`', '´', '*', '+', '~', '#', '-', '_', '.', ':', ',', ';', 'µ', '<', '>', '|', '^', '°', '@', '€')) return message.channel.send('Fehler, bitte gib nur Zahlen an!')
                 if(args[1].match('all')) {
-                    
+
                     message.channel.messages.delete
 
                 }
                 message.channel.bulkDelete(args[1])
+            break;
+
+            case '':
+                var min = 1;
+                var max = 5;
+                var x = (Math.random() * (max - min)) + min;
+                message.channel.send(x)
             break;
 
             default:
