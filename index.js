@@ -14,7 +14,7 @@ bot.on('message', message =>{
     
     let args = message.content.substring(PREFIX.length).split(" ");
 
-    let test = message.content.startsWith(PREFIX.length).split(" ");
+    let test = message.content.startsWith(PREFIX).split(" ");
 
     let lowercaseargs = test.map(args => test.toLowerCase());
 
