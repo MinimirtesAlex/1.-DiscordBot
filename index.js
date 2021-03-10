@@ -50,8 +50,8 @@ bot.on('message', message =>{
                 }
 
                 if(rand = 1) return message.channel.send('Schere')
-                if(rand = 2) return message.channel.send('Stein')
-                if(rand = 3) return message.channel.send('Papier')
+                else if(rand = 2) return message.channel.send('Stein')
+                else if(rand = 3) return message.channel.send('Papier')
 
             break;
 
