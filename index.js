@@ -41,7 +41,10 @@ bot.on('message', message =>{
                 message.channel.bulkDelete(args[1])
             break;
 
-                //var zufall = Math.round(Math.random() * 2);
+                /*var zufall = Math.round(Math.random() * 2);
+
+                let SSP = ["Schere", "Stein", "Papier"];
+                console.log(SSP[Math.round(Math.random() * 2)]);*/
 
             case 'schere':
                 var min = 7,
