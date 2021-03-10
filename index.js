@@ -33,6 +33,16 @@ bot.on('message', message =>{
             message.channel.bulkDelete(args[1])
         break;
 
+        case '':
+            if(message.member.hasPermission('ADMINISTRATOR')) {
+                message.channel.send('Test 1')
+                message.channel.send('Test 2')
+            }
+            else {
+                message.channel.send('Test 3')
+            }
+        break;
+
 
     }
 })
