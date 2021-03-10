@@ -30,7 +30,7 @@ bot.on('message', message =>{
             if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.channel.send('Dir fehlt die benötigte Berechtigung! (MANAGE_MESSAGES)')
             if(!args[1]) return message.channel.send('Fehler, bitte gib eine Zahl zwischen 2 und 99 als zweiten Parameter an!')
             if(lowercaseargs[1].includes('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'ä', 'ö', 'ü', 'ß')) return message.channel.send('Fehler, bitte gib nur Zahlen an!')
-            if(args[1].includes('!', '"', '§', '$', '%', '&', '/', '(', '{', '[', ']', '}', ')', '=', '?', '`', '´', '*', '+', '~', '#', '-', '_', '.', ':', ',', ';', 'µ', '<', '>', '|', '^', '°', '@', '€')) return message.channel.send('Fehler, bitte gib nur Zahlen an!')
+            if(args[1].includes('!' || '"' || '§', '$', '%', '&', '/', '(', '{', '[', ']', '}', ')', '=', '?', '`', '´', '*', '+', '~', '#', '-', '_', '.', ':', ',', ';', 'µ', '<', '>', '|', '^', '°', '@', '€')) return message.channel.send('Fehler, bitte gib nur Zahlen an!')
             message.channel.bulkDelete(args[1])
         break;
 
