@@ -47,21 +47,9 @@ bot.on('message', message =>{
                           
                 var zz = Math.floor(Math.random() * (max - min + 1)) + min
 
-                switch (zz){
-
-                    case '1':
-                        message.channel.send('Schere')
-                    break;
-
-                    case '2':
-                        message.channel.send('Stein')
-                    break;
-
-                    case '3':
-                        message.channel.send('Papier')
-                    break;
-
-                }
+                if(zz = 1) return message.channel.send('Schere')
+                if(zz = 2) return message.channel.send('Stein')
+                if(zz = 3) return message.channel.send('Papier')
 
             break;
 
