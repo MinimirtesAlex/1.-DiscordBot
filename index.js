@@ -55,14 +55,17 @@ bot.on('message', message =>{
 
                     case 7:
                         message.channel.send('Schere')
+                        message.channel.send('Unentschieden... ;D')
                     break;
 
                     case 8:
                         message.channel.send('Stein')
+                        message.channel.send('Du hast Verloren.. haha Viel Glück beim nächsten mal.')
                     break;
 
                     case 9:
                         message.channel.send('Papier')
+                        message.channel.send('Du hast Gewonnen! maaan du kek')
                     break;
 
                 }
@@ -81,14 +84,17 @@ bot.on('message', message =>{
 
                     case 7:
                         message.channel.send('Schere')
+                        message.channel.send('Du hast Verloren.. haha Viel Glück beim nächsten mal.')
                     break;
 
                     case 8:
                         message.channel.send('Stein')
+                        message.channel.send('Unentschieden... ;D')
                     break;
 
                     case 9:
                         message.channel.send('Papier')
+                        message.channel.send('Du hast Gewonnen! maaan du kek')
                     break;
 
                 }
@@ -107,14 +113,17 @@ bot.on('message', message =>{
 
                     case 7:
                         message.channel.send('Schere')
+                        message.channel.send('Du hast Gewonnen! maaan du kek')
                     break;
 
                     case 8:
                         message.channel.send('Stein')
+                        message.channel.send('Du hast Verloren.. haha Viel Glück beim nächsten mal.')
                     break;
 
                     case 9:
                         message.channel.send('Papier')
+                        message.channel.send('Unentschieden... ;D')
                     break;
 
                 }
