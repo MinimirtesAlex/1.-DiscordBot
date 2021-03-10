@@ -41,7 +41,7 @@ bot.on('message', message =>{
                 message.channel.bulkDelete(args[1])
             break;
 
-            case 'ssp':
+            case 'Schere' || 'Stein' || 'Papier':
                 var min = 7,
                 max = 9;
           
