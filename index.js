@@ -16,8 +16,10 @@ bot.on('message', message =>{
 
     let lowercaseargs = args.map(args => args.toLowerCase());
 
+    if(message.content.startsWith(PREFIX)) return hallo
 
-    switch (lowercaseargs[0]){
+
+   /* switch (lowercaseargs[0]){
 
         case 'help':
             message.channel.send('Hallo ich bin hier der BABO!\n Mein Prefix ist "' + PREFIX + '"!\n Meine Befehle sind:\n - **ping** | wir spielen ein schönes Spiel\n - **clear** [1 - 100] | Aus dem Chanel werden [1 -100] Nachrichten gelöscht\n Das wars! Wenn du noch wünsche hast, dann schreib Alex!')
@@ -93,8 +95,9 @@ bot.on('message', message =>{
         break;
 
 
-    }
+    }*/
 })
+
 
 
 bot.login(process.env.token)
