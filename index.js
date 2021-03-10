@@ -41,11 +41,27 @@ bot.on('message', message =>{
                 message.channel.bulkDelete(args[1])
             break;
 
-            case 'zz':
-                var min = 5,
-                max = 10;
+            case 'ssp':
+                var min = 1,
+                    max = 3;
                           
-                message.channel.send(Math.floor(Math.random() * (max - min + 1)) + min)
+
+                switch (Math.floor(Math.random() * (max - min + 1)) + min){
+
+                    case '1':
+                        message.channel.send('Schere')
+                    break;
+
+                    case '2':
+                        message.channel.send('Schere')
+                    break;
+
+                    case '3':
+                        message.channel.send('Schere')
+                    break;
+
+                }
+
             break;
 
             default:
