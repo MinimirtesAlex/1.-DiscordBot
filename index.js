@@ -49,7 +49,7 @@ bot.on('message', message =>{
                     return Math.floor(Math.random() * (max - min + 1)) + min;
                 }
 
-                if(rand = 1) return message.channel.send('Schere')
+                if(rand = 1) return message.channel.send(rand)
                 else if(rand = 2) return message.channel.send('Stein')
                 else if(rand = 3) return message.channel.send('Papier')
 
