@@ -67,58 +67,6 @@ bot.on('message', message =>{
 
             break;
 
-            case 'Stein':
-                var min = 7,
-                max = 9;
-          
-                function rand (min, max) {
-                    return Math.floor(Math.random() * (max - min + 1)) + min;
-                }
-
-                switch (rand(7, 9)) {
-
-                    case 7:
-                        message.channel.send('Schere')
-                    break;
-
-                    case 8:
-                        message.channel.send('Stein')
-                    break;
-
-                    case 9:
-                        message.channel.send('Papier')
-                    break;
-
-                }
-
-            break;
-
-            case 'Papier':
-                var min = 7,
-                max = 9;
-          
-                function rand (min, max) {
-                    return Math.floor(Math.random() * (max - min + 1)) + min;
-                }
-
-                switch (rand(7, 9)) {
-
-                    case 7:
-                        message.channel.send('Schere')
-                    break;
-
-                    case 8:
-                        message.channel.send('Stein')
-                    break;
-
-                    case 9:
-                        message.channel.send('Papier')
-                    break;
-
-                }
-
-            break;
-
             default:
                 message.channel.send('Fehler, dieser Befehl existirt noch nicht! Bitte den Developer diesen einzufügen!')
             break;
