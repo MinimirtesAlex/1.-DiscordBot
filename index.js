@@ -45,8 +45,9 @@ bot.on('message', message =>{
                 var min = 1,
                     max = 3;
                           
+                var zz = Math.floor(Math.random() * (max - min + 1)) + min
 
-                switch (Math.floor(Math.random() * (max - min + 1)) + min){
+                switch (zz){
 
                     case '1':
                         message.channel.send('Schere')
