@@ -20,7 +20,7 @@ bot.on('message', message =>{
     switch (lowercaseargs[0]){
 
         case 'help':
-            message.channel.send('Hallo ich bin hier der BABO!\n Mein Prefix ist "' + PREFIX + '"!\n Meine Befehle sind:\n - **ping** | wir spielen ein schönes Spiel\n - **clear** [1 - 100] | Aus dem Chanel werden [1 -100] Nachrichten gelöscht\n Das wars. Wenn du noch wünsche hast, dann schreib Alex!')
+            message.channel.send('Hallo ich bin hier der BABO!\n Mein Prefix ist "' + PREFIX + '"!\n Meine Befehle sind:\n - **ping** | wir spielen ein schönes Spiel\n - **clear** [1 - 100] | Aus dem Chanel werden [1 -100] Nachrichten gelöscht\n Das wars! Wenn du noch wünsche hast, dann schreib Alex!')
         break;
 
         case 'ping':
@@ -90,7 +90,7 @@ bot.on('message', message =>{
         break;
 
         default:
-            message.channel.send('Fehler, dieser Command existiert noch nicht! Bitte Alex ihn hinzuzufügen.')
+            message.channel.send('Fehler, dieser Command existiert noch nicht! Bitte Alex ihn hinzuzufügen!')
         break;
 
 
