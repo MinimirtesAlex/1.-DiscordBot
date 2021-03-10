@@ -58,10 +58,10 @@ bot.on('message', message =>{
         break;
 
         case 'owner':
-            if(message.member.displayName.match('MinimirtesAlex')) {
+            if(message.member.client.user.match('MinimirtesAlex')) {
             
             message.channel.bulkDelete(1)
-            
+
             }
         break;
 
