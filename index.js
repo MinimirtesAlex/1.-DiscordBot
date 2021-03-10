@@ -51,15 +51,15 @@ bot.on('message', message =>{
 
                 switch (rand(7, 9)) {
 
-                    case '7':
+                    case 7:
                         message.channel.send('Schere')
                     break;
 
-                    case '8':
+                    case 8:
                         message.channel.send('Stein')
                     break;
 
-                    case '9':
+                    case 9:
                         message.channel.send('Papier')
                     break;
 
