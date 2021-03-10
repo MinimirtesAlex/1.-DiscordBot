@@ -34,6 +34,7 @@ bot.on('message', message =>{
         break;
 
         case 'test':
+            message.channel.send('Works')
             if(message.member.hasPermission('ADMINISTRATOR')) {
                 message.channel.send('Test 1')
                 message.channel.send('Test 2')
