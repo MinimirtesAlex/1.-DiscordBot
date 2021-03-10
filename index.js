@@ -43,13 +43,15 @@ bot.on('message', message =>{
 
             case 'ssp':
                 var min = 1,
-                    max = 3;
-                          
-                var zz = Math.floor(Math.random() * (max - min + 1)) + min
+                max = 3;
+          
+                function rand (min, max) {
+                    return Math.floor(Math.random() * (max - min + 1)) + min;
+                }
 
-                if(zz = 1) return message.channel.send('Schere')
-                if(zz = 2) return message.channel.send('Stein')
-                if(zz = 3) return message.channel.send('Papier')
+                if(rand = 1) return message.channel.send('Schere')
+                if(rand = 2) return message.channel.send('Stein')
+                if(rand = 3) return message.channel.send('Papier')
 
             break;
 
