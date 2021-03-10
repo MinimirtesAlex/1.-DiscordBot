@@ -35,7 +35,7 @@ bot.on('message', message =>{
                 //if(args[1].includes('!', '"', '§', '$', '%', '&', '/', '(', '{', '[', ']', '}', ')', '=', '?', '`', '´', '*', '+', '~', '#', '-', '_', '.', ':', ',', ';', 'µ', '<', '>', '|', '^', '°', '@', '€')) return message.channel.send('Fehler, bitte gib nur Zahlen an!')
                 if(args[1].match('all')) {
                     
-                    message.channel.bulkDelete(1000)
+                    message.channel.messages.delete
 
                 }
                 message.channel.bulkDelete(args[1])
