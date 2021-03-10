@@ -41,7 +41,7 @@ bot.on('message', message =>{
                 message.channel.bulkDelete(args[1])
             break;
 
-            case '':
+            case 'zz':
                 var min = 1;
                 var max = 5;
                 var x = (Math.random() * (max - min)) + min;
