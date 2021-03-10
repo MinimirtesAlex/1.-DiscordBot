@@ -42,12 +42,14 @@ bot.on('message', message =>{
             break;
 
             case 'ssp':
-                var min = 1,
-                max = 3;
+                var min = 7,
+                max = 9;
           
                 function rand (min, max) {
                     return Math.floor(Math.random() * (max - min + 1)) + min;
                 }
+
+                message.channel.send(rand)
 
                 if(rand = 1) return message.channel.send(rand)
                 else if(rand = 2) return message.channel.send('Stein')
