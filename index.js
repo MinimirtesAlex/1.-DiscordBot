@@ -42,10 +42,10 @@ bot.on('message', message =>{
             break;
 
             case 'zz':
-                var min = 1;
-                var max = 5;
-                var x = (Math.random() * (max - min)) + min;
-                message.channel.send(x)
+                var min = 5,
+                max = 10;
+                          
+                message.channel.send(Math.floor(Math.random() * (max - min + 1)) + min)
             break;
 
             default:
