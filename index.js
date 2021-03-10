@@ -49,11 +49,21 @@ bot.on('message', message =>{
                     return Math.floor(Math.random() * (max - min + 1)) + min;
                 }
 
-                message.channel.send(rand(7, 9))
+                switch (rand(7, 9)) {
 
-                if(rand = 1) return message.channel.send(rand)
-                else if(rand = 2) return message.channel.send('Stein')
-                else if(rand = 3) return message.channel.send('Papier')
+                    case '7':
+                        message.channel.send('Schere')
+                    break;
+
+                    case '8':
+                        message.channel.send('Stein')
+                    break;
+
+                    case '9':
+                        message.channel.send('Papier')
+                    break;
+
+                }
 
             break;
 
