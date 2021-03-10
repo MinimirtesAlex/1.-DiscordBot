@@ -53,11 +53,11 @@ bot.on('message', message =>{
                     break;
 
                     case '2':
-                        message.channel.send('Schere')
+                        message.channel.send('Stein')
                     break;
 
                     case '3':
-                        message.channel.send('Schere')
+                        message.channel.send('Papier')
                     break;
 
                 }
