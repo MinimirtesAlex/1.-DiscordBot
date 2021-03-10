@@ -90,8 +90,6 @@ bot.on('message', message =>{
         break;
 
         default:
-            message.channel.send('Fehler, dieser Command existiert noch nicht! Bitte Alex ihn hinzuzufügen!')
-            stop;
         break;
 
 
