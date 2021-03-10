@@ -91,6 +91,7 @@ bot.on('message', message =>{
 
         default:
             message.channel.send('Fehler, dieser Command existiert noch nicht! Bitte Alex ihn hinzuzufügen!')
+            stop;
         break;
 
 
